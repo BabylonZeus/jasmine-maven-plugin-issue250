@@ -1,0 +1,94 @@
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Test project for jasmine maven plugin issue250 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ issue250 ---
+[INFO] Deleting D:\misc\jasmine-maven-plugin-issue250\target
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ issue250 ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ issue250 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:copy-resources (copy-sources-from-project) @ issue250 ---
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ issue250 ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 12 resources
+[INFO]
+[INFO] --- phantomjs-maven-plugin:0.4:install (default) @ issue250 ---
+[INFO] Resolved artifact D:\maven\repo\com\github\klieber\phantomjs\1.9.7\phantomjs-1.9.7-windows.zip from xxxxx (http://maven.xxxx.ne
+t/nexus/content/groups/Public/, releases)
+[INFO] Extracting D:\maven\repo\com\github\klieber\phantomjs\1.9.7\phantomjs-1.9.7-windows.zip\phantomjs-1.9.7-windows\phantomjs.exe t
+o D:\misc\jasmine-maven-plugin-issue250\target\phantomjs-maven-plugin\phantomjs-1.9.7-windows\phantomjs.exe
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ issue250 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ issue250 ---
+[INFO]
+[INFO] --- jasmine-maven-plugin:2.0-SNAPSHOT:test (default) @ issue250 ---
+[INFO] jetty-8.1.14.v20131031
+[INFO] Started SelectChannelConnector@0.0.0.0:61812
+[INFO] Executing Jasmine Specs
+juil. 09, 2014 8:06:08 PM org.openqa.selenium.phantomjs.PhantomJSDriverService <init>
+INFO: executable: D:\misc\jasmine-maven-plugin-issue250\target\phantomjs-maven-plugin\phantomjs-1.9.7-windows\phantomjs.exe
+juil. 09, 2014 8:06:08 PM org.openqa.selenium.phantomjs.PhantomJSDriverService <init>
+INFO: port: 25717
+juil. 09, 2014 8:06:08 PM org.openqa.selenium.phantomjs.PhantomJSDriverService <init>
+INFO: arguments: [--webdriver=25717, --webdriver-logfile=D:\misc\jasmine-maven-plugin-issue250\phantomjsdriver.log]
+juil. 09, 2014 8:06:08 PM org.openqa.selenium.phantomjs.PhantomJSDriverService <init>
+INFO: environment: {}
+PhantomJS is launching GhostDriver...
+[INFO  - 2014-07-09T18:06:09.414Z] GhostDriver - Main - running on port 25717
+[INFO  - 2014-07-09T18:06:09.903Z] Session [b491d2c0-0793-11e4-afcf-4febba36aa0c] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWin
+dows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (
+Windows NT 6.2; WOW64) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.7 Safari/534.34","webSecurityEnabled":true}
+[INFO  - 2014-07-09T18:06:09.903Z] Session [b491d2c0-0793-11e4-afcf-4febba36aa0c] - page.customHeaders:  - {}
+[INFO  - 2014-07-09T18:06:09.904Z] Session [b491d2c0-0793-11e4-afcf-4febba36aa0c] - Session.negotiatedCapabilities - {"browserName":"phantomjs","versi
+on":"1.9.7","driverName":"ghostdriver","driverVersion":"1.1.0","platform":"windows-8-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAl
+erts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabl
+ed":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2014-07-09T18:06:09.904Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: b491d2c0-0793-11e4-afcf-4febba36aa0c
+[INFO] Starting local server for executing tests
+[INFO  - 2014-07-09T18:06:11.344Z] ShutdownReqHand - _handle - About to shutdown
+[INFO] Server stopped
+[INFO]
+-------------------------------------------------------
+ J A S M I N E   S P E C S
+-------------------------------------------------------
+[INFO]
+tests for my-js-source
+  should check a dummy boolean
+  should not prefetch
+
+Results: 2 specs, 0 failures
+
+[INFO] stopped o.e.j.s.h.ContextHandler{/webjars,file:/D:/misc/jasmine-maven-plugin-issue250/}
+[INFO] stopped o.e.j.s.h.ContextHandler{/classpath,file:/D:/misc/jasmine-maven-plugin-issue250/}
+[INFO] stopped o.e.j.s.h.ContextHandler{/,file:/D:/misc/jasmine-maven-plugin-issue250/}
+[INFO] stopped o.e.j.s.h.ContextHandler{/spec,file:/D:/misc/jasmine-maven-plugin-issue250/}
+[INFO] stopped o.e.j.s.h.ContextHandler{/src,file:/D:/misc/jasmine-maven-plugin-issue250/}
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ issue250 ---
+[INFO] Building jar: D:\misc\jasmine-maven-plugin-issue250\target\issue250-1.0-SNAPSHOT.jar
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ issue250 ---
+[INFO] Installing D:\misc\jasmine-maven-plugin-issue250\target\issue250-1.0-SNAPSHOT.jar to D:\maven\repo\test-jasmine-maven-pl
+ugin\issue250\1.0-SNAPSHOT\issue250-1.0-SNAPSHOT.jar
+[INFO] Installing D:\misc\jasmine-maven-plugin-issue250\pom.xml to D:\maven\repo\test-jasmine-maven-plugin\issue250\1.0-SNAPSHO
+T\issue250-1.0-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 10.913 s
+[INFO] Finished at: 2014-07-09T20:06:12+02:00
+[INFO] Final Memory: 23M/217M
+[INFO] ------------------------------------------------------------------------
